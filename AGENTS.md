@@ -29,3 +29,4 @@ Activate specialist agents in the chat using `@name` followed by the task:
 ## 🛠️ Custom Experiences and Workflows
 - **`skills`**: History of executed tasks (encryption, external integrations, cookies).
 - **Skill:** [skills/skills.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/skills.md)
+    

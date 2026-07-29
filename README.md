@@ -1,28 +1,31 @@
-# Agent Orchestration Template
+# 🤖 Agent Orchestration - TwistAudio
 
-This repository is an AI agent orchestration template for use in an IDE, defining guidelines, roles, and workflows for development assisted by multiple specialized agents.
+Short, direct, and objective guidelines for agent cooperation in the IDE.
 
-# Overview
+---
 
-The purpose of this template is to standardize collaboration between AI agents during software development, establishing native commands, dedicated specialists, and reusable skills. It can be adapted and reused as a base for other projects.
+## ⚡ Native IDE Shortcuts (Always Use)
+- **`/goal`**: Use for long/complex tasks. The agent will create a robust plan and execute it to completion, tracked by the `task.md` file.
+- **`/grill-me`**: Use if you don't know all the technical details. The agent will conduct an interview to align decisions before coding.
+- **`/schedule`**: Use to automate recurring tasks (e.g., daily audits).
+- **`workflow-skill-creator`**: Use to convert a successfully completed interactive workflow into a permanent agent skill.
 
-Native Shortcuts
+---
 
-/goal: planning and execution of long tasks, tracked via task.md. 
-/grill-me: technical interview to align decisions before implementation. 
-/workflow-skill-creator - save workflows as reusable skills
-/schedule: automation of recurring tasks. workflow-skill-creator: conversion of validated workflows into permanent skills.
+## 👥 Available Specialists
 
-# Specialists 
+Activate specialist agents in the chat using `@name` followed by the task:
 
-@Frontend - Responsible for React, Vite, Vanilla CSS, UI/UX, and API integration.
+### 🎨 `@frontend`
+- **Focus:** React, Vite, Vanilla CSS, UI/UX, and API integration.
+- **Skill:** [skills/frontend.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/frontend.md)
 
-@Backend (Full Stack) - Responsible for backend, QA/testing, DevOps/Docker, security (CORS/cookies), and data architecture. Acts as the project's full stack specialist.
+### ⚙️ `@backend`
+- **Focus:** Backend, QA/Testing, DevOps/Docker, Security (CORS/Cookies), and Architecture/Data.
+- **Skill:** [skills/backend.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/backend.md)
 
+---
 
-# Skills
-
-History and library of previously executed and documented tasks, including encryption, external integrations, and cookie management, serving as a reusable knowledge base for the agents.
-
-
-Made with ❤️ by Klaus Moiane
+## 🛠️ Custom Experiences and Workflows
+- **`skills`**: History of executed tasks (encryption, external integrations, cookies).
+- **Skill:** [skills/skills.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/skills.md)
