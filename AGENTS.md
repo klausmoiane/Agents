@@ -1,4 +1,4 @@
-# 🤖 Agent Orchestration - TwistAudio
+# 🤖 Agent Orchestration
 
 Short, direct, and objective guidelines for agent cooperation in the IDE.
 
