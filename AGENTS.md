@@ -1,31 +1,31 @@
-# 🤖 Orquestração de Agentes - TwistAudio
+# 🤖 Agent Orchestration - TwistAudio
 
-Diretrizes curtas, diretas e objetivas para a cooperação de agentes na IDE.
-
----
-
-## ⚡ Atalhos Nativos da IDE (Use Sempre)
-- **`/goal`**: Use para tarefas longas/complexas. O agente criará um plano robusto e o executará até o fim acompanhado pelo arquivo `task.md`.
-- **`/grill-me`**: Use se não souber todos os detalhes técnicos. O agente fará uma entrevista para alinhar decisões antes de programar.
-- **`/schedule`**: Use para automatizar tarefas recorrentes (ex: auditorias diárias).
-- **`workflow-skill-creator`**: Use para transformar um fluxo interativo concluído com sucesso em uma skill permanente de agente.
+Short, direct, and objective guidelines for agent cooperation in the IDE.
 
 ---
 
-## 👥 Especialistas Disponíveis
+## ⚡ Native IDE Shortcuts (Always Use)
+- **`/goal`**: Use for long/complex tasks. The agent will create a robust plan and execute it to completion, tracked by the `task.md` file.
+- **`/grill-me`**: Use if you don't know all the technical details. The agent will conduct an interview to align decisions before coding.
+- **`/schedule`**: Use to automate recurring tasks (e.g., daily audits).
+- **`workflow-skill-creator`**: Use to convert a successfully completed interactive workflow into a permanent agent skill.
 
-Ative os agentes especialistas no chat usando `@nome` seguido da tarefa:
+---
+
+## 👥 Available Specialists
+
+Activate specialist agents in the chat using `@name` followed by the task:
 
 ### 🎨 `@frontend`
-- **Foco:** React, Vite, CSS Vanilla, UI/UX, e integração com APIs.
+- **Focus:** React, Vite, Vanilla CSS, UI/UX, and API integration.
 - **Skill:** [skills/frontend.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/frontend.md)
 
 ### ⚙️ `@backend`
-- **Foco:** Backend, QA/Testes, DevOps/Docker, Segurança (CORS/Cookies) e Arquitetura/Dados.
+- **Focus:** Backend, QA/Testing, DevOps/Docker, Security (CORS/Cookies), and Architecture/Data.
 - **Skill:** [skills/backend.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/backend.md)
 
 ---
 
-## 🛠️ Experiências e Workflows Customizados
-- **`skills`**: Histórico de tarefas executadas (criptografia, integrações externas, cookies).
+## 🛠️ Custom Experiences and Workflows
+- **`skills`**: History of executed tasks (encryption, external integrations, cookies).
 - **Skill:** [skills/skills.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/skills.md)
