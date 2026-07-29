@@ -18,14 +18,14 @@ Activate specialist agents in the chat using `@name` followed by the task:
 
 ### 🎨 `@frontend`
 - **Focus:** React, Vite, Vanilla CSS, UI/UX, and API integration.
-- **Skill:** [skills/frontend.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/frontend.md)
+- **Skill:** [skills/frontend.md](skills/frontend.md)
 
 ### ⚙️ `@backend`
 - **Focus:** Backend, QA/Testing, DevOps/Docker, Security (CORS/Cookies), and Architecture/Data.
-- **Skill:** [skills/backend.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/backend.md)
+- **Skill:** [skills/backend.md](skills/backend.md)
 
 ---
 
 ## 🛠️ Custom Experiences and Workflows
 - **`skills`**: History of executed tasks (encryption, external integrations, cookies).
-- **Skill:** [skills/skills.md](file:///c:/Users/klaus/OneDrive/Desktop/DEV/SIDE%20PROJECTS/AGENTS/skills/skills.md)
+- **Skill:** [skills/skills.md](skills/skills.md)

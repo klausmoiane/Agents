@@ -1,43 +1,43 @@
 ---
 name: skills-experiencia
-description: "Registro de tarefas concluídas e fluxos de trabalho para guiar novas implementações no projeto."
+description: "Record of completed tasks and workflows to guide new implementations in the project."
 ---
 
-# Histórico de Experiência e Workflows (Skills)
+# Experience History and Workflows (Skills)
 
-Este arquivo registra o histórico de implementações realizadas para servir de referência direta em novos desenvolvimentos.
-
----
-
-## 1. Atualização do Formato de Payload (Criptografia)
-* **Objetivo:** Sincronizar modificações no formato de encriptação (AES-GCM) entre Backend (Python/Flask) e Frontend (Vite/React).
-* **Passos executados:**
-  1. Alterado `TransitCipher.encrypt()` no backend para retornar `{iv, data, version}`.
-  2. Mantido `encrypt_to_base64_legacy()` para retrocompatibilidade.
-  3. Atualizado `decryptPayload` no frontend para lidar com o novo objeto JSON.
-  4. Implementado conversor `base64ToUint8Array` no cliente e fallback automático.
-* **Arquivos:** `backend/app.py`, `src/services/apiClient.js`
-
-## 2. Integração de API Externa (Outros Serviços)
-* **Objetivo:** Estabelecer comunicação segura entre o backend TwistAudio e serviços de terceiros (ex: Clerk Auth ou Streams de Mídia).
-* **Passos executados:**
-  1. Criado serviço de requisição HTTP isolado com tratamento de erros.
-  2. Implementado cabeçalho `X-App-Client: TwistAudio` para validação interna.
-  3. Adicionado timeout rígido e fluxo de retry automático para evitar gargalos.
-  4. Mapeado chaves privadas exclusivamente através do arquivo de segredos (.env).
-* **Arquivos:** `backend/stream_token_service.py`, `backend/secrets/.env`
-
-## 3. Implementação de Cookies Seguros e CSRF
-* **Objetivo:** Migrar armazenamento de autenticação do LocalStorage para cookies httpOnly e habilitar proteção SameSite.
-* **Passos executados:**
-  1. Adicionado cookies `session_id` e `csrf_token` no login.
-  2. Habilitado flags `httponly=True`, `secure=True` (em produção) e `samesite='Strict'`.
-  3. Removido armazenamento local no frontend e variáveis temporárias em memória.
-  4. Configurado decorator `@require_auth` no backend validando cookies e CSRF.
-* **Arquivos:** `backend/app.py`, `src/services/apiClient.js`
+This file records the history of implementations carried out to serve as a direct reference for new developments.
 
 ---
 
-## Como Usar
-1. Antes de iniciar qualquer tarefa correspondente a estes tópicos, consulte este arquivo para replicar a lógica, arquitetura e convenções estabelecidas.
-2. Ao criar novos fluxos complexos, registre-os neste arquivo no mesmo formato.
+## 1. Payload Format Update (Encryption)
+* **Goal:** Synchronize changes in the encryption format (AES-GCM) between Backend (Python/Flask) and Frontend (Vite/React).
+* **Steps executed:**
+  1. Changed `TransitCipher.encrypt()` in the backend to return `{iv, data, version}`.
+  2. Maintained `encrypt_to_base64_legacy()` for backward compatibility.
+  3. Updated `decryptPayload` in the frontend to handle the new JSON object.
+  4. Implemented `base64ToUint8Array` converter on the client and automatic fallback.
+* **Files:** `backend/app.py`, `src/services/apiClient.js`
+
+## 2. External API Integration (Other Services)
+* **Goal:** Establish secure communication between the TwistAudio backend and third-party services (e.g., Clerk Auth or Media Streams).
+* **Steps executed:**
+  1. Created isolated HTTP request service with error handling.
+  2. Implemented `X-App-Client: TwistAudio` header for internal validation.
+  3. Added strict timeout and automatic retry flow to avoid bottlenecks.
+  4. Mapped private keys exclusively through the secrets file (.env).
+* **Files:** `backend/stream_token_service.py`, `backend/secrets/.env`
+
+## 3. Implementation of Secure Cookies and CSRF
+* **Goal:** Migrate authentication storage from LocalStorage to httpOnly cookies and enable SameSite protection.
+* **Steps executed:**
+  1. Added `session_id` and `csrf_token` cookies on login.
+  2. Enabled flags `httponly=True`, `secure=True` (in production), and `samesite='Strict'`.
+  3. Removed local storage in the frontend and temporary in-memory variables.
+  4. Configured `@require_auth` decorator in the backend validating cookies and CSRF.
+* **Files:** `backend/app.py`, `src/services/apiClient.js`
+
+---
+
+## How to Use
+1. Before starting any task corresponding to these topics, consult this file to replicate the established logic, architecture, and conventions.
+2. When creating new complex workflows, record them in this file using the same format.

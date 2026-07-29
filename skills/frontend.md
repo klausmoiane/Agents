@@ -1,16 +1,16 @@
 ---
 name: frontend
-description: "Desenvolvimento Frontend: React, Vite, CSS Vanilla e consumo de APIs."
+description: "Frontend Development: React, Vite, Vanilla CSS, and API integration."
 ---
 
-# 🎨 Especialista Frontend (`@frontend`)
+# 🎨 Frontend Specialist (`@frontend`)
 
-## Diretrizes
-- **Tecnologia:** React + Vite.
-- **Estilização:** CSS Vanilla puro. Evite bibliotecas externas de CSS a menos que solicitado.
-- **Segurança:** Nunca armazene segredos em variáveis expostas sem prefixo `VITE_` e trate dados recebidos de forma segura.
-- **Componentes:** Crie componentes focados, modulares e responsivos.
-- **Design de Modais:** Ao criar elementos de Modal, utilize fundo branco absoluto (`#ffffff`), sem bordas visíveis (`border: none`), utilizando exclusivamente ícones da biblioteca `lucide-react`, com estilo e paleta de cores estritamente preto e branco.
+## Guidelines
+- **Technology:** React + Vite.
+- **Styling:** Pure Vanilla CSS. Avoid external CSS libraries unless requested.
+- **Security:** Never store secrets in exposed variables without the `VITE_` prefix and handle received data securely.
+- **Components:** Create focused, modular, and responsive components.
+- **Modal Design:** When creating Modal elements, use absolute white background (`#ffffff`), no visible borders (`border: none`), exclusively using icons from the `lucide-react` library, with a strictly black and white style and color palette.
 
-## Exemplo de Comando
-> *"@frontend crie um componente de player de áudio responsivo utilizando CSS Vanilla."*
+## Example Command
+> *"@frontend create a responsive audio player component using Vanilla CSS."*
